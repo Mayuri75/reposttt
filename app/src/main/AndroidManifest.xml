@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.company.mysapcpsdkproject" >
+
+    <application
+        android:name=".app.SAPWizardApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/application_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".logon.LogonActivity"
+            android:label="@string/application_name"
+            android:theme="@style/splashScreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SimpleActivity"
+            android:label="@string/application_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.sap.cloud.mobile.onboarding.launchscreen.LaunchScreenActivity"
+            android:label="@string/application_name" >
+            <meta-data
+                android:name="action_handler"
+                android:value="com.company.mysapcpsdkproject.logon.LaunchScreenActionHandlerImpl" />
+        </activity>
+        <activity
+            android:name="com.sap.cloud.mobile.onboarding.passcode.SetPasscodeActivity"
+            android:label="@string/application_name"
+            android:parentActivityName=".logon.LogonActivity" >
+            <meta-data
+                android:name="action_handler"
+                android:value="com.company.mysapcpsdkproject.logon.PasscodeActionHandlerImpl" />
+            <meta-data
+                android:name="validation_action_handler"
+                android:value="com.company.mysapcpsdkproject.logon.PasscodeValidationActionHandler" />
+        </activity>
+        <activity
+            android:name="com.sap.cloud.mobile.onboarding.passcode.ConfirmPasscodeActivity"
+            android:label="@string/application_name"
+            android:parentActivityName=".logon.LogonActivity" >
+            <meta-data
+                android:name="action_handler"
+                android:value="com.company.mysapcpsdkproject.logon.PasscodeActionHandlerImpl" />
+            <meta-data
+                android:name="validation_action_handler"
+                android:value="com.company.mysapcpsdkproject.logon.PasscodeValidationActionHandler" />
+        </activity>
+        <activity
+            android:name="com.sap.cloud.mobile.onboarding.fingerprint.FingerprintActivity"
+            android:label="@string/application_name" >
+            <meta-data
+                android:name="action_handler"
+                android:value="com.company.mysapcpsdkproject.logon.FingerprintActionHandlerImpl" />
+        </activity>
+        <activity
+            android:name="com.sap.cloud.mobile.onboarding.fingerprint.FingerprintErrorActivity"
+            android:label="@string/application_name" >
+            <meta-data
+                android:name="action_handler"
+                android:value="com.company.mysapcpsdkproject.logon.FingerprintActionHandlerImpl" />
+        </activity>
+        <activity android:name=".logon.UnlockActivity" >
+        </activity>
+        <activity
+            android:name="com.sap.cloud.mobile.onboarding.passcode.EnterPasscodeActivity"
+            android:label="@string/application_name"
+            android:parentActivityName=".logon.LogonActivity" >
+            <meta-data
+                android:name="action_handler"
+                android:value="com.company.mysapcpsdkproject.logon.PasscodeActionHandlerImpl" />
+            <meta-data
+                android:name="validation_action_handler"
+                android:value="com.company.mysapcpsdkproject.logon.PasscodeValidationActionHandler" />
+        </activity>
+        <activity
+            android:name="com.sap.cloud.mobile.onboarding.passcode.ChangePasscodeActivity"
+            android:label="@string/application_name" >
+            <meta-data
+                android:name="action_handler"
+                android:value="com.company.mysapcpsdkproject.logon.PasscodeActionHandlerImpl" />
+            <meta-data
+                android:name="validation_action_handler"
+                android:value="com.company.mysapcpsdkproject.logon.PasscodeValidationActionHandlerImpl" />
+        </activity>
+        <activity
+            android:name=".app.ErrorNotificationDialog"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <meta-data
+            android:name="android.content.APP_RESTRICTIONS"
+            android:resource="@xml/app_restrictions" />
+    </application>
+
+</manifest>

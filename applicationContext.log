@@ -1,0 +1,17 @@
+   ______________________________
+ / \                             \.
+|   | This log file was created  |.
+ \_ | by the Wizard, it contains |.
+    | the configuration data     |.
+    | used for the application   |.
+    | generation.                |.
+    |                            |.
+    | It shouldn't be edited     |.
+    | manually, changing it      |.
+    | won't affect the generated |.
+    | sample.                    |.
+    |   _________________________|___
+    |  /                            /.
+    \_/____________________________/.
+
+{"projectName":"MySAPCPSDKProject","projectLocation":"C:\\Users\\mayuri.chalisgaonkar\\AndroidStudioProjects\\MySAPCPSDKProject12","projectNamespace":"com.company.mysapcpsdkproject","serviceURL":"https://mobile-cgsr0s9x4f.hana.ondemand.com/","applicationID":"com.incture.pod","applicationSecurityConfig":"OAUTH","jsonPath":null,"senderID":null,"serverKey":null,"isLogEnabled":false,"isLogUploadEnabled":false,"SAPSDKLocation":"MAVEN_LOCAL","generateFileProviderDataFile":true,"generateJavaCode":true,"generateOnlineApp":true,"isUsageIncluded":false}
